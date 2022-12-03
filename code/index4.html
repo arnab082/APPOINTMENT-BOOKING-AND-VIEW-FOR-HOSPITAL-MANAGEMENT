@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e8e604a2e6.js">
+</head>
+<body>
+    <div>
+        <table class="header" style="width: 100%;">
+            <tr class="tr1">
+                <td class="td" style="width: 10%; padding-right: 1em; padding-left: 1em;"><img src="images/logo.png" alt="No Image" height="75" width="150"></td>
+                <td style="width: 50%; padding-left: 1em;">
+                    <table>
+                        <tr>
+                            <td style="padding: 1em;" class="hover"><a href="#pname" style="text-decoration: none;"><span class="align"><i class="fas fa-home home"></i> Home</span></a></td>
+                            <td style="padding: 1em;" class="hover"><a href="#pname" style="text-decoration: none;"><span class="align"><i class="fas fa-align-left about"></i> About Us</span></a></td>
+                            <td style="padding: 1em;" class="hover"><a href="#pname" style="text-decoration: none;"><span class="align"><i class="fas fa-users team"></i> Our Team</span></a></td>
+                            <td style="padding: 1em;" class="hover"><a href="#pname" style="text-decoration: none;"><span class="align"><i class="fas fa-headset contact"></i> Contact Us</span></a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 40%; padding-left: 14.5em;">
+                    <table> 
+                        <tr>
+                            <!-- <td style="padding-right: 0.8em;"><button class="btn"><img src="download4.png" alt="" height="21px" width="14px"></button></td> -->
+                            <td style="padding-right: 0.8em;" class="hover1"><a href="#" class="iconbtn fas fa-location-dot"></a></td>
+                            <td><button class="button2 button1"><span style="font-weight: bold;">BOOK APPOINTMENT</span></button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table> 
+    </div>
+    <div class="team-section">
+        <div class="inner-width">
+            <h1>Meet Our Team</h1>
+            <div class="pers">
+
+
+                <div class="pe">
+                    <img src="images/imgdoc.jpg" alt="">
+                    <div class="p-name">Dr. Abdul Hamid</div>
+                    <div class="p-des">Consultant</div>
+                    <div class="p-sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="pe">
+                    <img src="images/imgdoc2.jpg" alt="">
+                    <div class="p-name">Dr. David Austin</div>
+                    <div class="p-des">Physician</div>
+                    <div class="p-sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="pe">
+                    <img src="images/imgdoc3.jpg" alt="">
+                    <div class="p-name">Dr. Lewis Hannes</div>
+                    <div class="p-des">Surgeon</div>
+                    <div class="p-sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="side-menu">
+            <div class="toggle-btn fas fa-chevron-left"></div>
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+                Youtube
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+
+            <!-- <a href="#">
+        <i class="fab fa-discord"></i>
+        Discord
+      </a> -->
+        </div> 
+        <script>
+            $(".toggle-btn").click(function () {
+                $(".side-menu").toggleClass("active");
+                $(this).toggleClass("fa-chevron-right");
+            });
+        </script>
+    </div>
+  <div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="images/logo.png" alt="Error loading Image" class="logo"/>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rights-text">© 2022 Created By Life Wave All Rights Reserved.</p>
+            </div>
+
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter Your Email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email" />
+                    <input type="submit" class="btn" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>

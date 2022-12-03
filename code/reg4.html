@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Patient</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/78d75312e3.js">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   <div>
+    <table class="header" style="width: 100%;">
+        <tr class="tr1">
+            <td class="td" style="width: 10%; padding-right: 1em; padding-left: 1em;"><img src="pic.jpeg" alt="No Image" height="75" width="150"></td>
+            <td style="width: 50%; padding-left: 1em;">
+                <table>
+                    <tr>
+                        <td style="padding: 1em;" class="hover">
+                            <a href="#pname" style="text-decoration: none;">
+                                <span class="align"><i class="fas fa-home home"></i> Home</span>
+                            </a>
+                        </td>
+                        <td style="padding: 1em;" class="hover">
+                            <a href="#pname" style="text-decoration: none;">
+                                <span class="align"><i class="fas fa-align-left about"></i> About Us</span>
+                            </a>
+                        </td>
+                        <td style="padding: 1em;" class="hover">
+                            <a href="Our_Team_Menu.html" target="_blank" style="text-decoration: none;">
+                                <span class="align"><i class="fas fa-users team"></i> Our Team</span>
+                            </a>
+                        </td>
+                        <td style="padding: 1em;" class="hover">
+                            <a href="Contact_US_Page.html" style="text-decoration: none;">
+                                <span class="align"><i class="fas fa-headset contact"></i> Contact Us</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width: 40%; padding-left: 14.5em;">
+                <table>
+                    <tr>
+                        <!-- <td style="padding-right: 0.8em;"><button class="btn"><img src="download4.png" alt="" height="21px" width="14px"></button></td> -->
+                        <td style="padding-right: 0.8em;" class="hover1"><a href="https://www.google.com/maps/place/Vellore+Institute+of+Technology+-+VIT+Chennai/@12.8406462,80.1512396,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5259af8e491f67:0x944b42131b757d2d!8m2!3d12.840641!4d80.1534283"  target="_blank" class="iconbtn fas fa-location-dot"></a></td>
+                        <td><a href="index8.html"  target="_blank"><button class="button2 button1"><span style="font-weight: bold;">BOOK APPOINTMENT</span></button></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="wrapper">
+        <form id="form1" class="form" action="patient_register.php" method="post">
+            <h1>Register</h1>
+            <h1>Patient</h1>
+                <!-- <table>
+                    <tr id="padding">
+                        <td><div id="div1"><input type="button" class="input button" value="Patient"></div></td>
+                        <td><div id="div2"><input type="button" class="input button" value="Doctor"></div></td>
+                        <td><div id="div3"><input type="button" class="input button" value="Admin"></div></td>
+                    </tr>
+                </table>  -->
+                <input type="text" class="input text" placeholder="First Name" name="fname">
+                <input type="text" class="input text" placeholder="Last Name" name="lname">
+                <input type="text" class="input text" placeholder="Gender" name="gender">
+                <input type="text" class="input text" placeholder="Phone Number" name="pno">
+                <textarea class="input text" name="" id="" cols="30" rows="10" placeholder="Address" name="addr"></textarea>
+                <input type="text" class="input text" placeholder="E-Mail" name="emai">
+                <input type="text" class="input text" placeholder="Username" name="uname">
+                <input type="text" class="input text" placeholder="Password" name="pwd">
+                <!-- <input type="text" class="input text" placeholder="Re-type Password" name="fname"> -->
+                <!-- <a href="#" class="ref">Forgot Password</a> -->
+                <input type="submit" class="input button" name="submit1" value="Sign UP">
+                <!-- <a href="#" class="ref1">Don't have an Account? Sign Up</a> -->
+        </form>
+        <div>
+            <div class="side-menu">
+                <div class="toggle-btn fas fa-chevron-left"></div>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                    Youtube
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+
+                <!-- <a href="#">
+            <i class="fab fa-discord"></i>
+            Discord
+          </a> -->
+            </div>
+            <script>
+                $(".toggle-btn").click(function () {
+                    $(".side-menu").toggleClass("active");
+                    $(this).toggleClass("fa-chevron-right");
+                });
+            </script>
+        </div>
+    </div>
+    <div>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="left-col">
+                    <img src="pic.jpeg" alt="Error loading Image" class="logo"/>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="rights-text">© 2022 Created By Life Wave All Rights Reserved.</p>
+                </div>
+
+                <div class="right-col">
+                    <h1>Our Newsletter</h1>
+                    <div class="border"></div>
+                    <p>Enter Your Email to get our news and updates.</p>
+                    <form action="" class="newsletter-form">
+                        <input type="text" class="txtb" placeholder="Enter Your Email" />
+                        <input type="submit" class="btn" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+   </div>
+</body>
+</html>
